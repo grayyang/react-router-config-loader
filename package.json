@@ -1,0 +1,28 @@
+{
+  "name": "react-router-config-loader",
+  "version": "0.1.0",
+  "description": "Webpack loader to load react-router-config",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc mocha"
+  },
+  "author": {
+    "name": "grayyang",
+    "email": "yangxc.gray@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "deepcopy": "^0.6.3",
+    "tosource": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "chai-as-promised": "^7.1.1",
+    "js-promisify": "^1.1.0",
+    "mocha": "^3.5.0",
+    "nyc": "^11.1.0",
+    "rimraf": "^2.6.1",
+    "webpack": "^3.5.4",
+    "yaml-loader": "^0.5.0"
+  }
+}

@@ -1,0 +1,10 @@
+- component: ../components/Root
+  routes:
+    - component: ../components/Home
+      path: /
+      exact: true
+    - component: ../components/Child
+      path: /child/:id
+      routes:
+        - component: ../components/GrandChild
+          path: /child/:id/grand-child
