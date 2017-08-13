@@ -1,9 +1,17 @@
 language: node_js
 node_js:
-  - "node"
-  - "6"
+  - node
+  - lts/*
 script:
   - npm run eslint
   - npm run test
 after_success:
   - npm run coverage
+deploy:
+  provider: npm
+  email: yangxc.gray@gmail.com
+  api_key:
+    secure: 7Jsaz0kAURiXC7TupuauXk4pFkpjcMK4e0iPkXRJdKR/msMa2HalS9NI7hOMpZw+BhVddr8+w0qHmfUCUEgwZnbpOhrInr+pC8Bw+TrDlWfeQ2UEKl/+NjvWAubEekjJZ3mPX2ypeyC4KYJI+84PNBmstXgSbt0KHR/cHNbhOmiJjiAH2MyiSuuT6lscY34M4DC+YUtpwH/k9ea9DPc0DVJL6x6evmbUzu9+pMez2CGDikgG+xAExGJCynwaC4ma0uvWlmRSGQBwG77yy1P6VXLzPTwnrSag3T0DwHSwDS+HtkZJ33ZRzisEpxEcJsQkoHIbMjDSeZ3uwnYGAeFuJG1iCeQwtCTWptqBLUBcLQFybNWxMh8PaDJIW2WV2IEAbcjmJKwuPYiW63OMqdUuC33TeWZ4dsg9UUdRCCY2XfXsSAsPUkJM7oYS3ZpNrr847GQM2WmQqT9huthzJXB8I+4KAQ29cG3Fh/cqokeJhaH4JwRby/6bBLvSC79AevA2LhnrFmA+0rusTtCpELeZSftWkUvLlBQWxDm/52s4Ehce64szuQeVRyZdIZOOox5wpeds4Cnhf8TipFomZ2Uf+DHbBqTjiMVE1eYoTgR/ggZ7dlr6a9v9bRvBjy8fVdHQaJkfQ0OI5lB+ZZ/7TiqfPCll1qmronvBAkLOuJxs3xs=
+  on:
+    tags: true
+    repo: grayyang/react-router-config-loader

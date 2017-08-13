@@ -85,13 +85,13 @@ describe('Loader', () => {
               path: '/',
               routes: [
                 {
-                  path: '/child',
+                  path: 'child',
                   routes: [
                     {
-                      path: '/:id',
+                      path: ':id',
                     },
                     {
-                      path: '/grandchild',
+                      path: 'grandchild',
                     }
                   ],
                 },

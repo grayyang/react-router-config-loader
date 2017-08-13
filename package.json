@@ -1,7 +1,7 @@
 {
   "name": "react-router-config-loader",
   "version": "0.1.0",
-  "description": "Webpack loader to load react-router-config",
+  "description": "webpack loader transforms react router configuration defined in json/yaml file into react-router-config module",
   "main": "index.js",
   "scripts": {
     "eslint": "eslint \"**/*.js\"",
@@ -9,9 +9,22 @@
     "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "author": {
-    "name": "grayyang",
+    "name": "Yang, Xuechen",
     "email": "yangxc.gray@gmail.com"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/grayyang/react-router-config-loader"
+  },
+  "bugs": {
+    "url": "https://github.com/grayyang/react-router-config-loader/issues"
+  },
+  "keywords": [
+    "react-router-config",
+    "webpack-loader",
+    "react-router",
+    "router"
+  ],
   "license": "MIT",
   "dependencies": {
     "deepcopy": "^0.6.3",
