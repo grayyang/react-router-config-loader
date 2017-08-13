@@ -114,7 +114,7 @@ Both configuration fields defined in [react-router-config](https://github.com/Re
 ### component: string
 The core difference between [react-router-config](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config) configuration and [react-router-config-loader](https://www.npmjs.com/package/react-router-config-loader) configuration is that, the `component` field is path from which to resolve the react component class instead of the component class.
 
-`component` supports relative path (and absolute path) to resolve local components, and module path to resolve components from node modules. By default, relative path will be resolved using the context path unless [`componentsDir`](#componentsDir) options is set.
+`component` supports relative path (and absolute path) to resolve local components, and module path to resolve components from node modules. By default, relative path will be resolved using the context path unless [`componentsDir`](#componentsdir-string) options is set.
 
 If `componentName` field is not specified, the file name (without extention) is used as the name of the component.
 
@@ -122,7 +122,7 @@ If `componentName` field is not specified, the file name (without extention) is 
 Once specified, the value of `componentName` will be used as the import name of the component.
 
 ### path: string
-Absolute [path-to-regrex](https://www.npmjs.com/package/path-to-regexp) path used to match for the component if [`relativePath`](#relativePath) is not set. Otherwise, relative path should be used.
+Absolute [path-to-regrex](https://www.npmjs.com/package/path-to-regexp) path used to match for the component if [`relativePath`](#relativepath-boolean) is not set. Otherwise, relative path should be used.
 
 ### exact: boolean
 When `true`, will only match if the path matches the URL exactly. See https://reacttraining.com/react-router/core/api/Route/exact-bool
