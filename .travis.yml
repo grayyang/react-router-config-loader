@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - "node"
+  - "6"
+script:
+  - npm run eslint
+  - npm run test
+after_success:
+  - npm run coverage

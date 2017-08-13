@@ -4,7 +4,9 @@
   "description": "Webpack loader to load react-router-config",
   "main": "index.js",
   "scripts": {
-    "test": "nyc mocha"
+    "eslint": "eslint \"**/*.js\"",
+    "test": "nyc mocha",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "author": {
     "name": "grayyang",
@@ -18,6 +20,8 @@
   "devDependencies": {
     "chai": "^4.1.1",
     "chai-as-promised": "^7.1.1",
+    "coveralls": "^2.13.1",
+    "eslint": "^4.4.1",
     "js-promisify": "^1.1.0",
     "mocha": "^3.5.0",
     "nyc": "^11.1.0",
