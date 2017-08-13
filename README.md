@@ -1,9 +1,10 @@
 # react-router-config-loader
 [webpack](https://webpack.js.org/) loader transforms plain react router configuration object defined in json/yaml file into [react-router-config](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config) js module. 
 
+[![npm version](https://badge.fury.io/js/react-router-config-loader.svg)](https://badge.fury.io/js/react-router-config-loader)
 [![Build Status](https://travis-ci.org/grayyang/react-router-config-loader.svg?branch=master)](https://travis-ci.org/grayyang/react-router-config-loader)
 [![Coverage Status](https://coveralls.io/repos/github/grayyang/react-router-config-loader/badge.svg?branch=master)](https://coveralls.io/github/grayyang/react-router-config-loader?branch=master)
-[![npm version](https://badge.fury.io/js/react-router-config-loader.svg)](https://badge.fury.io/js/react-router-config-loader)
+[![Greenkeeper badge](https://badges.greenkeeper.io/grayyang/react-router-config-loader.svg)](https://greenkeeper.io/)
 
 ## Motivation
 [react-router-config](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config) provides one centralized routes configuration within react. However, the requirement to reference component classes directly in routes configuration limits its usage. 
