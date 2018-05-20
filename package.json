@@ -27,7 +27,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "deepcopy": "^0.6.3",
+    "deepcopy": "^1.0.0",
     "tosource": "^1.0.0"
   },
   "devDependencies": {
