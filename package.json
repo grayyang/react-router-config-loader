@@ -40,6 +40,6 @@
     "nyc": "^11.1.0",
     "rimraf": "^2.6.1",
     "webpack": "^3.5.4",
-    "yaml-loader": "^0.5.0"
+    "yaml-loader": "^0.6.0"
   }
 }
